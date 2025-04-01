@@ -55,7 +55,7 @@ with tab1:
      st.subheader('병역처분결과를 입력하세요', divider=True)
      #st.markdown("##### 병역처분결과를 입력하세요")
      #st.divider()
-     user_name = st.selectbox('',['','현역입영대상','사회복무요원소집대상','전시근로역','병역면제','재검대상'], label_visibility = 'hidden')
+     user_name = st.selectbox('',['','현역입영대상','사회복무요원소집대상','전시근로역','병역면제','재신체검사대상'], label_visibility = 'hidden')
 
 
      if user_name != '':
@@ -69,7 +69,7 @@ with tab1:
      elif user_name == '사회복무요원소집대상' :
           #st.write(f'👉 4급은 사회복무요원 소집 대상입니다')
           st.write(f'➡️ 사회복무요원제도')
-          st.markdown(f'- 국가기관, 지방자치단체, 공공단체 및 사회복지시설의 공익목적 수행에 필요한 사회복지, 보건의료, 교육문화, 환경안전 등의 사회서비스 업무 및 행정업무등의 지원을 위한 병역의무의 한 형태로 운영하는 제도') 
+          st.markdown(f'- 국가기관, 지방자치단체, 공공단체 및 사회복지시설의 공익목적 수행에 필요한 사회복지, 보건의료, 교육문화, 환경안전 등의 사회서비스 업무 및 행정업무등의 지원을 위한 병역의무의 한 형태로 운영하는 제도입니다.') 
      
           with st.expander('📢 대상'):
                st.write('병역판정검사 결과 보충역으로 병역처분된 사람')
@@ -79,29 +79,45 @@ with tab1:
                st.write('21개월')
           with st.expander('✍🏼 복무형태'):
                st.write('출·퇴근 근무하며 소속기관장의 지휘감독을 받음')
-          with st.expander('📊 처우'):
+          with st.expander('💵 처우'):
                st.write('현역병 봉급 상당액의 보수 및 직무수행에 필요한 여비 등 지급')
 
           st.divider()
           st.write(f'➡️ 사회복무요원 소집일자 및 복무기관 결정')
-          st.markdown(f'- 사회복무요원 소집 신청은 본인이 직접 신청하는 본인선택과 신청하지 않은 사람에 대해 주소지 관할 지방병무청장이 소집순서에 따라 일자와 기관을 결정하는 직권통지로 구분') 
+          st.markdown(f'- 사회복무요원 소집 신청은 본인이 직접 신청하는 본인선택과 신청하지 않은 사람에 대해 주소지 관할 지방병무청장이 소집순서에 따라 일자와 기관을 결정하는 직권통지로 구분됩니다.') 
      
-          with st.expander('📤 본인선택'):
-               st.write('신청시기')
+          with st.expander('🏅 본인선택'):
+               st.markdown(':blue-background[**신청시기**]')
                st.write('다음연도 소집일자 및 복무기관 본인선택은 1차(11월 중)와 2차(12월 중)로 나누어 신청을 받으며, 탈락횟수, 나이 등 선발기준에 의해 선발')
-               st.divider()
-               st.write('신청방법(본인인증)')
+               st.markdown(':blue-background[**신청방법(본인인증)**]')
                st.write('1차 : 병무청 누리집 → 민원신청 → 병무민원 → 사회복무 → 재학생 및 국외입영연기자 소집신청(선발)')
+               st.write('2차 : 병무청 누리집 → 민원신청 → 병무민원 → 사회복무 → 소집일자 및 복무기관 본인선택(선발)')
+               st.write(':blue[- _접수시기, 선발기준 등은 변동가능, 병무청 누리집 공지 참고_]')
           with st.expander('📌 지방병무청 직권통지'):
-               st.write('국가기관, 지방자치단체, 공공단체 및 사회복지시설의 사회복지, 보건의료, 교육문화, 환경안전 등의 사회서비스 업무 및 행정업무 등의 지원업무')
+               st.write('본인선택하지 않은 별도·일반 소집대상으로 관할 지방병무청에서 연중 선발')
+
+          st.divider()
+          st.write(f'➡️ 사회복무요원 현역복무 희망 신청')
+          st.markdown(f'- 사회복무요원(복무중인 경우 포함)이 현역 복무를 희망하는 경우 신청합니다.') 
+     
+          with st.expander('📝 신청대상'):
+               st.write('사회복무요원 소집대상, 사회복무요원으로 복무 중인 사람')
+               st.write('(단, 남은 복무기간이 현역의 복무기간으로 환산했을때 6개월 이상 남은 사람으로 한함)')
+               st.write(':blue[- _수형사유 보충역 및 현역부적합 심사에 따른 보충역은 비대상_]')
+          with st.expander('🚩 처리절차'):
+               st.write('신청서 제출 → 대상여부 확인 → 신체검사 없이 병역처분 변경(현역병입영 대상자) → 현역병입영 대상자로 처분변경 후 현역병 입영신청 또는 모집병 지원')
+          with st.expander('📊 신청방법'):
+               st.write('병무청 누리집 → 민원신청 → 병무민원 → 병역판정검사 → 사회복무요원 현역복무희망 병역처분변경 신청')
+               st.write(':blue[- _신청은 1회로 제한, 신청에 따라 현역병입영 대상자로 변경된 사람은 신청을 취소할 수 없음_]')
 
 
      elif user_name == '전시근로역' :
-          st.write('5급은 전시근로역대상입니다')
+          st.write('병역판정검사 또는 신체검사 결과 현역 또는 보충역 복무는 할 수 없으나 전시근로소집에 의한 군사지원 업무는 감당할 수 있다고 결정된 사람')
+          st.write('군복무 및 예비군도 면제되며, 민방위에 편성되어 관련 교육 등을 받게 됩니다. 추후 민방위 편성 및 교육관련 문의는 주소지 읍·면·동 주민자치센터로 문의하시면 됩니다.')
      elif user_name == '병역면제' :
-          st.write('6급은 병역이 면제됩니다')
-     elif user_name == '재검대상' :
-          st.write('7급 재검대상은 치유기간 이후 다시 재검을 받으셔야 합니다')
+          st.write('현역, 보충역, 예비군, 민방위, 전시근로역 등의 모든 병역의무가 완전히 면제되는 것으로 평시든 전시든 병역과 관련된 어떤 의무도 없습니다.')
+     elif user_name == '재신체검사대상' :
+          st.write('병역판정검사 시 신체등급 7급으로 질병치료 후 다시 검사를 받는 사람입니다.')
      else: 
           st.write('')
 
@@ -270,6 +286,20 @@ with tab3:
      st.markdown('- 마크다운 글 머리\n'
 			' - 마크다운')       # 이런 식으로 - 앞 뒤에 공백 추가하면, 들여쓰기도 가능함!
      st.divider()
+
+     st.markdown("*Streamlit* is **really** ***cool***.")
+     st.markdown('''
+    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
+    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
+     st.markdown("Here's a bouquet &mdash;\
+            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
+
+     multi = '''If you end a line with two spaces,
+     a soft return is used for the next line.
+
+     Two (or more) newline characters in a row will result in a hard return.
+     '''
+     st.markdown(multi)
      
 st.divider()
 
