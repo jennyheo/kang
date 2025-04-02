@@ -94,7 +94,7 @@ with tab1:
                st.markdown(':blue-background[**입영시기**]')
                st.markdown('검사받은 다음해 1월 ~ 12월')
                st.markdown(':blue-background[**신청방법(본인인증 필요)**]')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 병무민원 ▸ 현역/상근입영 ▸ 현역병입영 본인선택원 ▸ 2026년 입영일자 선택]')
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 병무민원 ▸ 현역/상근입영 ▸ 현역병입영 본인선택원]')
                st.markdown(':blue[_※ 선착순 접수  \n※ 입영부대는 입영일자 신청 즉시 전산자동결정_]')
                st.markdown(':blue-background[**유의사항**]')
                st.markdown('신청, 취소, 변경이 불가능하거나 횟수가 제한되며, 기한이 정해져있음')
@@ -105,7 +105,7 @@ with tab1:
                st.markdown('지원서 접수년도 기준 18세 이상 28세 이하의 현역병입영대상자')
           with st.expander('📊 지원 및 선발절차'):
                st.markdown('지원서 인터넷 접수 ▸ (1차)서류심사 ▸ (2차)최종선발 ')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 군지원(모병)안내 ▸ 모집안내서비스 ▸ 안내 및 지원절차]')
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 군지원(입영신청)안내 ▸ 모집안내서비스 ▸ 안내 및 지원절차] [바로가기](%s)' % "https://mma.go.kr/contents.do?mc=mma0000386")
           with st.expander('📆 모집 및 복무기간'):
                st.markdown('기술행정병, 동반입대병 등 6개 분야 158개 특기 / 18개월 복무')
           with st.expander('1️⃣ 육군병 모집'):
@@ -160,7 +160,7 @@ with tab1:
                st.markdown('병역을 이행할 사람에게 적성에 맞는 군특기 추천·상담, 군생활정보제공, 군체험·교육 프로그램 등을 상시 제공하는 복합공간')
                st.markdown(':blue-background[**직업선호도 검사**]')
                st.markdown('병무청 누리집에서 신청')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 민원신청 ▸ 병역진로설계 ▸ 직업선호도검사]')
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 민원신청 ▸ 병역진로설계 ▸ 직업선호도검사] [바로가기](%s)' % "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22315")
                st.markdown(':blue-background[**설명회**]')
                st.markdown('병역이행절차안내, 군생활 및 자기계발 정보제공')
                st.markdown(':blue-background[**병역진로상담**]')
@@ -169,7 +169,7 @@ with tab1:
                st.markdown('군 보급품 전시, 군 장비 모의체험  \n (체력검정, 전차SIM, 드론VR등)')
           with st.expander('💡 병역진로설계서비스 신청방법'):
                st.markdown('온라인 신청')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 민원신청 ▸ 병역진로설계]')
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 민원신청 ▸ 병역진로설계] [바로가기](%s)' % "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22315")
 
 
 
