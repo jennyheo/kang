@@ -106,9 +106,10 @@ with tab1:
           with st.expander('📊 지원 및 선발절차'):
                st.markdown('지원서 인터넷 접수 ▸ (1차)서류심사 ▸ (2차)최종선발 ')
                st.markdown('📖:orange-background[병무청 누리집 ▸ 군지원(입영신청)안내 ▸ 모집안내서비스 ▸ 안내 및 지원절차] [바로가기](%s)' % "https://mma.go.kr/contents.do?mc=mma0000386")
-          with st.expander('📆 모집 및 복무기간'):
-               st.markdown('기술행정병, 동반입대병 등 6개 분야 158개 특기 / 18개월 복무')
           with st.expander('1️⃣ 육군병 모집'):
+               st.markdown(':blue-background[**모집 및 복무기간**]')
+               st.markdown('기술행정병, 동반입대병 등 6개 분야 158개 특기 / 18개월 복무')
+               st.divider()
                st.markdown(':blue-background[**기술행정병**]')
                st.markdown('자격·면허·전공학과 등과 연계하여 모집 특기별로 선발, 기술자격이나 면허 또는 전공과 관련된 분야에 복무  \n :blue[_※ 통신분야, 차량운전 등 122개 특기_]')
                st.markdown(':blue-background[**전문특기병**]')
@@ -124,6 +125,7 @@ with tab1:
           with st.expander('2️⃣ 해군병 모집'):
                st.markdown(':blue-background[**모집분야 및 복무기간**]')
                st.markdown('일반·전문기술병 등 5개분야 16개 계열 / 20개월 복무')
+               st.divider()
                st.markdown(':blue-background[**일반·기술병**]')
                st.markdown('일반, 전산, 조리, 항공, 전자, 통신, 기관, 화생방, 전기, 건축토목, 수송, 의무')
                st.markdown(':blue-background[**전문특기병**]')
@@ -135,6 +137,7 @@ with tab1:
           with st.expander('3️⃣ 해병대병 모집'):
                st.markdown(':blue-background[**모집분야 및 복무기간**]')
                st.markdown('일반·전문기술병 등 5개분야 8개 계열 / 18개월 복무')
+               st.divider()
                st.markdown(':blue-background[**일반·기술병**]')
                st.markdown('일반, 수색, 화학, 공병, 무기정비, 수송')
                st.markdown(':blue-background[**전문특기병**]')
@@ -146,6 +149,7 @@ with tab1:
           with st.expander('4️⃣ 공군병 모집'):
                st.markdown(':blue-background[**모집분야 및 복무기간**]')
                st.markdown('일반·전문기술병 등 3개분야 10개 직종 / 21개월 복무')
+               st.divider()
                st.markdown(':blue-background[**일반·기술병**]')
                st.markdown('일반, 전자계산, 화생방, 의무, 기계, 차량운전, 차량정비, 통신전자전기')
                st.markdown(':blue-background[**전문특기병**]')
