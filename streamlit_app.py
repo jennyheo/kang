@@ -89,6 +89,8 @@ with tab1:
           with st.expander('🧑🏾‍🤝‍🧑🏽 당해연도 본인선택'):
                st.markdown('입영계획 인원 대비 부족한 인원에 대하여 수시(매주 또는 격주) 접수하며, 그 주 월요일 병무청 누리집에 입영일자별 공석, 유의사항 등을 공지')
                st.markdown('📖:orange-background[병무청 누리집 ▸ 병역이행안내 ▸ 복무제도 ▸ 현역병,상근예비역 ▸ 입영신청 절차 및 복무기간]')
+               url = "https://www.mma.go.kr/contents.do?mc=mma0000728"
+               st.markdown("[바로가기](%s)" % "https://www.mma.go.kr/contents.do?mc=mma0000728")
           with st.expander('⏰ 다음연도 본인선택'):
                st.markdown('군 소요 범위 내 입영하는 해의 전년도에 입영일자를 선택하며, 지방청별 접수(공석수 및 신청일시 등 상이)')
                st.markdown(':blue-background[**입영시기**]')
