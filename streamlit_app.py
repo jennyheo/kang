@@ -88,7 +88,7 @@ with tab1:
      
           with st.expander('🏅 본인선택'):
                st.markdown(':blue-background[**신청시기**]')
-               st.write('다음연도 소집일자 및 복무기관 본인선택은 1차(11월 중)와 2차(12월 중)로 나누어 신청을 받으며, 탈락횟수, 나이 등 선발기준에 의해 선발')
+               st.write('다음연도 소집일자 및 복무기관 본인선택은 1차(11월 중)와 2차(12월 중)로 나누어 신청을 받으며, '+'**탈락횟수, 나이 등 선발기준에 의해 선발**')
                st.markdown(':blue-background[**신청방법(본인인증)**]')
                st.write('1차 : 병무청 누리집 → 민원신청 → 병무민원 → 사회복무 → 재학생 및 국외입영연기자 소집신청(선발)')
                st.write('2차 : 병무청 누리집 → 민원신청 → 병무민원 → 사회복무 → 소집일자 및 복무기관 본인선택(선발)')
@@ -158,7 +158,8 @@ with tab2:
           st.rerun()
      if "AST"==st.session_state.kkk: 
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다. 정상범위는 0 ~ 40 IU/L 이하입니다')
+          st.markdown('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다.\n'
+                      ' 정상범위는 0 ~ 40 IU/L 이하입니다')
           v = st.slider("❓ 검사결과지의 AST수치를 입력하세요", 0, 100, 40)
           if v <= 40:
                st.write(f"AST수치 {v} : 🟢 정상입니다") 
@@ -276,6 +277,8 @@ with tab3:
      st.write('아래 링크를 누르시면 병무청 민원포털로 연결됩니다.')
      st.write('인증이 필요한 화면입니다.')
      st.link_button("건강검진 결과서 바로가기", "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22255")
+
+     st.link_button("현역병 본인선택안내 바로가기", "https://www.mma.go.kr/contents.do?mc=mma0000728")
 
 
      st.markdown('# 마크다운 1')
