@@ -94,7 +94,7 @@ with tab1:
                st.markdown(':blue-background[**입영시기**]')
                st.markdown('검사받은 다음해 1월 ~ 12월')
                st.markdown(':blue-background[**신청방법(본인인증 필요)**]')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 병무민원 ▸ 현역/상근입영 ▸ 현역병입영 본인선택원]')
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 병역이행안내 ▸ 현역병,상근예비역 ▸ 입영신청 공지사항] [바로가기](%s)' % "https://www.mma.go.kr/board/boardList.do?gesipan_id=507&mc=mma0003311")
                st.markdown(':blue[_※ 선착순 접수  \n※ 입영부대는 입영일자 신청 즉시 전산자동결정_]')
                st.markdown(':blue-background[**유의사항**]')
                st.markdown('신청, 취소, 변경이 불가능하거나 횟수가 제한되며, 기한이 정해져있음')
@@ -169,7 +169,7 @@ with tab1:
                st.markdown('군 보급품 전시, 군 장비 모의체험  \n (체력검정, 전차SIM, 드론VR등)')
           with st.expander('💡 병역진로설계서비스 신청방법'):
                st.markdown('온라인 신청')
-               st.markdown('📖:orange-background[병무청 누리집 ▸ 민원신청 ▸ 병역진로설계] [바로가기](%s)' % "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22315")
+               st.markdown('📖:orange-background[병무청 누리집 ▸ 병역진로설계 ▸ 상담신청절차안내] [바로가기](%s)' % "https://www.mma.go.kr/byjr/01/bYJRContents.do?mc=mma0002535")
 
 
 
