@@ -55,7 +55,7 @@ with tab1:
      st.subheader('병역처분결과를 입력하세요', divider=True)
      #st.markdown("##### 병역처분결과를 입력하세요")
      #st.divider()
-     user_name = st.selectbox('',['','현역병입영대상','사회복무요원소집대상','전시근로역','병역면제','재신체검사대상'], label_visibility = 'hidden')
+     user_name = st.selectbox('',['현역병입영대상','사회복무요원소집대상','전시근로역','병역면제','재신체검사대상'], label_visibility = 'hidden')
 
 
      if user_name != '':
