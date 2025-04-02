@@ -92,6 +92,7 @@ with tab1:
                st.markdown('선발순위 : 학력과 신체등급이 낮은 순  \n 우선선발 : 수형자, 자녀양육자, 생계곤란자')
                st.markdown(':blue-background[**선발시기**]')
                st.markdown('매년 12월 중순경')
+		  
           st.divider()
           st.write(f'➡️ 현역병 입영 본인선택')
           st.markdown('- 현역병 입영 본인선택은 입영 희망일자를 직접 선택하여 학업, 취업 등 진로설계에 차질이 없도록 하는 제도로 당해연도 및 다음연도 입영일자 신청으로 구분됩니다.')
@@ -108,6 +109,7 @@ with tab1:
                st.markdown(':blue[_※ 입영부대는 입영일자 신청 즉시 전산자동결정_]')
                st.markdown(':blue-background[**유의사항**]')
                st.markdown('신청, 취소, 변경이 불가능하거나 횟수가 제한되며, 기한이 정해져있음')
+		  
           st.divider()
           st.write(f'➡️ 현역병 모집')
           st.markdown('- 각 군 주요 군사특기를 개인의 자격·면허·전공과 연계하여 군에서 필요로 하는 기술과 능력을 갖춘 사람을 선발합니다.')
@@ -163,6 +165,7 @@ with tab1:
                st.markdown('일반, 전자계산, 화생방, 의무, 기계, 차량운전, 차량정비, 통신전자전기')
                st.markdown(':blue-background[**전문특기병**]')
                st.markdown('군악, 의장')
+		  
           st.divider()
           st.write(f'➡️ 병역진로설계')
           st.markdown('- 입영 전 자신의 적성·전공 등을 고려하여 군 복무 및 전역 후 진로를 체계적으로 설계하도록 지원하는 프로그램입니다.')
