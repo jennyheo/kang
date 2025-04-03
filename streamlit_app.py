@@ -3,8 +3,9 @@
 import streamlit as st
 import pandas as pd
 import pyarrow as pa
+from PIL import Image #copyright 하단 그림파일
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 #.streamlit/config.toml 파일에서 maincolor 지정 : 파란색
 
 st.subheader('병역처분결과를 설명해드립니다')
@@ -17,27 +18,33 @@ with st.expander('😄 알려드립니다'):
 css = ''' 
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:17px;
+    font-size:16px;    
     }
 
 	.stTabs [data-baseweb="tab-list"] {
 		gap: 2px;
     }
 	.stTabs [data-baseweb="tab"] {
-		height: 30px;
-        white-space: pre-wrap;
-		background-color: #ffffff;
+		height: 35px;
+          font-weight: 700;;
+          white-space: pre-wrap;
 		border-radius: 4px 4px 0px 0px;
-		gap: 1px;
+		gap: 2px;
 		padding-top: 10px;
           padding-right: 10px;
 		padding-bottom: 10px;
           padding-left: 10px;
     }
 	.stTabs [aria-selected="true"] {
-  		#background-color: #0000ff;
-          #color: #FFFFFF;
+  		#background-color: #ffffff;
+          #color: #ffffff;
+          #border: 2px solid #efefef;
+          #border-bottom: 0px;
 	}
+     .stTabs [data-baseweb="tab-highlight"] {
+        #background-color: #99D9EA;
+        #color: #99D9EA;
+    }
 </style>
 '''
 
@@ -47,13 +54,9 @@ st.markdown(css, unsafe_allow_html=True)
 
 with tab1:
      st.subheader('병역이행안내', divider=True)
-     #st.markdown("##### 병역처분결과를 입력하세요")
-     #st.divider()
      user_name = st.selectbox('',['병역처분결과를 선택하세요','현역병입영대상','사회복무요원소집대상','전시근로역','병역면제','재신체검사대상'], label_visibility = 'hidden')
 
-
      if user_name != '병역처분결과를 선택하세요':
-          #st.subheader(', divider=True)
           st.markdown(f"#### 🎯 {user_name}")
      else:
           st.markdown('')
@@ -87,7 +90,7 @@ with tab1:
                st.markdown('군 소요 범위 내 입영하는 해의 전년도에 입영일자를 선택하며, 지방청별 접수(공석수 및 신청일시 등 상이)')
                st.markdown(':blue-background[**입영시기**]')
                st.markdown('검사받은 다음해 1월 ~ 12월')
-               st.markdown(':blue-background[**신청방법(본인인증 필요)**]')
+               st.markdown(':blue-background[**신청방법**]')
                st.markdown('📖:orange-background[병무청 누리집 ▸ 병역이행안내 ▸ 현역병,상근예비역 ▸ 입영신청 공지사항] [바로가기](%s)' % "https://www.mma.go.kr/board/boardList.do?gesipan_id=507&mc=mma0003311")
                st.markdown(':blue[_※ 선착순 접수  \n※ 입영부대는 입영일자 신청 즉시 전산자동결정_]')
                st.markdown(':blue-background[**유의사항**]')
@@ -408,4 +411,6 @@ with tab3:
      
 st.divider()
 
-#st.write("st.session_state 객체:", st.session_state)
+st.markdown('<div style="text-align: right;font-style: italic">Updated on 2025. 4. 3.</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align: right;"><b>강원지방병무청</b></div>', unsafe_allow_html=True)
+#st.image('data/logo.png' ,  width=150)
