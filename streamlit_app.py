@@ -20,7 +20,7 @@ with st.expander('😄 알려드립니다'):
 css = ''' 
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:16px;    
+    	font-size:16px;    
     }
 
 	.stTabs [data-baseweb="tab-list"] {
@@ -28,24 +28,14 @@ css = '''
     }
 	.stTabs [data-baseweb="tab"] {
 		height: 35px;
-          font-weight: 700;;
-          white-space: pre-wrap;
+          	font-weight: 700;;
+          	white-space: pre-wrap;
 		border-radius: 4px 4px 0px 0px;
 		gap: 2px;
 		padding-top: 10px;
-          padding-right: 10px;
+         	 padding-right: 10px;
 		padding-bottom: 10px;
-          padding-left: 10px;
-    }
-	.stTabs [aria-selected="true"] {
-  		#background-color: #ffffff;
-          #color: #ffffff;
-          #border: 2px solid #efefef;
-          #border-bottom: 0px;
-	}
-     .stTabs [data-baseweb="tab-highlight"] {
-        #background-color: #99D9EA;
-        #color: #99D9EA;
+          	padding-left: 10px;
     }
 </style>
 '''
@@ -110,7 +100,7 @@ with tab1:
                st.markdown('기술행정병, 동반입대병 등 6개 분야 158개 특기 / 18개월 복무')
                st.divider()
                st.markdown(':blue-background[**기술행정병**]')
-               st.markdown('자격·면허, 전공 등과 연계하여 모집 특기별로 선발, 기술자격이나 면허 또는 전공과 관련된 분야에 복무  \n :blue[_※ 통신분야, 차량운전 등 122개 특기_]')
+               st.markdown('자격·면허, 전공 등과 연계하여 모집 특기별로 선발되어 관련된 분야에 복무  \n :blue[_※ 통신분야, 차량운전 등 122개 특기_]')
                st.markdown(':blue-background[**전문특기병**]')
                st.markdown('특수한 자격·면허, 전공, 경력이 필요하거나 선발의 전문성이 요구되어 별도의 지원자격이나 선발기준을 정하여 모집  \n :blue[_※ 어학병, 군사과학기술병 등 36개 특기_]')
                st.markdown(':blue-background[**동반입대병**]')
