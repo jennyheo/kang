@@ -70,14 +70,14 @@ with tab1:
                st.markdown(':blue-background[**대상**]')
                st.markdown('입영일자를 선택하지 않은 일반 현역병입영대상자, 졸업예정자, 별도 입영대상자에 대하여 의무부과 순서에 따라 직권으로 입영일자를 결정')
                st.markdown(':blue-background[**입영부대**]')
-               st.markdown('육군(육군훈련소 외 16개 입영부대)으로 입영')
+               st.markdown('육군(육군훈련소 포함 17개 입영부대)으로 입영')
                st.markdown(':blue-background[**복무기간**]')
                st.markdown('18개월 복무(신병교육기간 5주 포함)')
           with st.expander('🗂️ 상근예비역 소집'):
                st.markdown(':blue-background[**대상**]')
                st.markdown('다음 해 현역병 입영대상자(19세 병역판정검사자, 졸업예정자, 입영일자 본인선택자)로 소집 권역에 그해 10월 31일 이전부터 가족과 함께 거주하는 사람')
                st.markdown(':blue-background[**선발인원**]')
-               st.markdown('권역별소요인원 대비 유고율 감안 일정 인원')
+               st.markdown('권역별소요인원 대비 유고율을 감안한 일정 인원')
                st.markdown(':blue-background[**선발순위 및 우선선발 기준**]')
                st.markdown('선발순위 : 학력과 신체등급이 낮은 순  \n 우선선발 : 수형자, 자녀양육자, 생계곤란자')
                st.markdown(':blue-background[**선발시기**]')
@@ -99,7 +99,7 @@ with tab1:
                st.markdown('신청, 취소, 변경이 불가능하거나 횟수가 제한되며, 기한이 정해져있음')
           st.divider()
           st.write(f'➡️ 현역병 모집')
-          st.markdown('- 각 군 주요 군사특기를 개인의 자격·면허·전공과 연계하여 군에서 필요로 하는 기술과 능력을 갖춘 사람을 선발합니다.')
+          st.markdown('- 각 군 주요 군사특기를 개인의 자격·면허, 전공과 연계하여 군에서 필요로 하는 기술과 능력을 갖춘 사람을 선발합니다.')
           with st.expander('🔎 지원자격'):
                st.markdown('지원서 접수년도 기준 18세 이상 28세 이하의 현역병입영대상자')
           with st.expander('📊 지원 및 선발절차'):
@@ -110,15 +110,15 @@ with tab1:
                st.markdown('기술행정병, 동반입대병 등 6개 분야 158개 특기 / 18개월 복무')
                st.divider()
                st.markdown(':blue-background[**기술행정병**]')
-               st.markdown('자격·면허·전공학과 등과 연계하여 모집 특기별로 선발, 기술자격이나 면허 또는 전공과 관련된 분야에 복무  \n :blue[_※ 통신분야, 차량운전 등 122개 특기_]')
+               st.markdown('자격·면허, 전공 등과 연계하여 모집 특기별로 선발, 기술자격이나 면허 또는 전공과 관련된 분야에 복무  \n :blue[_※ 통신분야, 차량운전 등 122개 특기_]')
                st.markdown(':blue-background[**전문특기병**]')
-               st.markdown('특수한 자격·면허·전공, 경력을 필요로 하거나 선발의 전문성이 요구되어 별도의 지원자격이나 선발기준을 정하여 선발  \n :blue[_※ 어학병, 군사과학기술병 등 36개 특기_]')
+               st.markdown('특수한 자격·면허, 전공, 경력이 필요하거나 선발의 전문성이 요구되어 별도의 지원자격이나 선발기준을 정하여 모집  \n :blue[_※ 어학병, 군사과학기술병 등 36개 특기_]')
                st.markdown(':blue-background[**동반입대병**]')
-               st.markdown('친구 또는 친척과 함께 입영하여 같은 생활권 범위 내 부대에서 복무')
+               st.markdown('친구 또는 친척과 함께 입영하여 같은 생활권 범위 부대에서 복무')
                st.markdown(':blue-background[**직계가족복무부대병**]')
-               st.markdown('직계존속·형제자매 및 외조부모가 복무한(또는 복무중인) 부대에서 복무  \n :blue[_※ 가족이 현역간부인 경우는 현재 복무중인 부대 지원 불가_]')
+               st.markdown('직계존속·형제자매 및 외조부모가 복무를 마쳤거나 복무중인 부대에서 복무  \n :blue[_※ 가족이 현역간부인 경우는 현재 복무중인 부대 지원 불가_]')
                st.markdown(':blue-background[**연고지복무병**]')
-               st.markdown('주소지 등이 연고지에 위치한 전방부대에서 복무')
+               st.markdown('주소지 등 연고지 인근의 전방부대에서 복무')
                st.markdown('강원지역 연고지 지원가능 시·군  \n (영서) 춘천, 홍천, 양구, 화천, 인제, 철원, 횡성  \n (영동) 속초, 양양, 고성')
                st.markdown(':blue[_※ 연고지 : 지원서 접수일 현재 지원하는 부대 연고지역에 1년 이상 주민등록 설정 등_]')
           with st.expander('2️⃣ 해군병 모집'):
@@ -170,6 +170,7 @@ with tab1:
           with st.expander('💡 병역진로설계서비스 신청방법'):
                st.markdown('온라인 신청')
                st.markdown('📖:orange-background[병무청 누리집 ▸ 병역진로설계 ▸ 상담신청절차안내] [바로가기](%s)' % "https://www.mma.go.kr/byjr/01/bYJRContents.do?mc=mma0002535")
+               st.markdown(':blue[_※ 병역판정검사를 받지 않은 사람도 온라인서비스 신청 가능_]')
 
 
 
@@ -377,7 +378,7 @@ with tab2:
 
 
      if st.session_state.kkk == False:
-          st.session_state.kkk='' 
+          st.session_state.kkk=''
 
 
 with tab3:
