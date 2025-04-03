@@ -378,7 +378,7 @@ with tab2:
 with tab3:
      st.write('아래 링크를 누르시면 병무청 민원포털로 연결됩니다.')
      st.write('인증이 필요한 화면입니다.')
-     st.link_button("건강검진 결과서 바로가기", "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22255")
+     st.link_button("건강검진 결과서 바로가기", "https://mwpt.mma.go.kr/caisBMHS/index_mwps.jsp?menuNo=22255&menuAo=ZYnYjXIyd39nf%2BxJF4DUXQ%3D%3D&menuBo=tE6wUVinCwBg3Se1ezI7%2BQ%3D%3D&menuCo=Cf1jQaND5RsiOghxWnqA%2Fuho0pXo%2Fl5qT55ltM5R5LvrgXzkfG5E9%2FueCa%2FIcCz0Rh9KPR3EMs6a4koFYlGUw3Mk58%2FpElUhuf8bKn21lMZj3bs2zsG1Bm7aJ7rdDJcU")
 
      st.link_button("현역병 본인선택안내 바로가기", "https://www.mma.go.kr/contents.do?mc=mma0000728")
 
