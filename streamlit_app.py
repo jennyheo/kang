@@ -3,12 +3,14 @@
 import streamlit as st
 import pandas as pd
 import pyarrow as pa
-from PIL import Image #copyright 하단 그림파일
-
-#st.set_page_config(layout="wide")
 #.streamlit/config.toml 파일에서 maincolor 지정 : 파란색
+st.set_page_config(
+     page_title="병역이행안내", 
+     page_icon="💎"
+)
 
 st.subheader('병역처분결과를 설명해드립니다')
+#st.set_page_config(layout="wide")
 
 with st.expander('😄 알려드립니다'):
   st.write('병역판정검사(입영판정검사) 결과지 내용에 대해 궁금한 사항을 안내합니다.')
@@ -385,29 +387,6 @@ with tab3:
 
      st.link_button("현역병 본인선택안내 바로가기", "https://www.mma.go.kr/contents.do?mc=mma0000728")
 
-
-     st.markdown('# 마크다운 1')
-     st.markdown('## 마크다운 2')
-     st.markdown('### 마크다운 3')
-     st.markdown('#### 마크다운 4')
-     st.markdown('**_마크다운 진하게&기울임_**')
-     st.markdown('- 마크다운 글 머리\n'
-			' - 마크다운')       # 이런 식으로 - 앞 뒤에 공백 추가하면, 들여쓰기도 가능함!
-     st.divider()
-
-     st.markdown("*Streamlit* is **really** ***cool***.")
-     st.markdown('''
-    :red[Streamlit] :orange[can] :green[write] :blue[text] :violet[in]
-    :gray[pretty] :rainbow[colors] and :blue-background[highlight] text.''')
-     st.markdown("Here's a bouquet &mdash;\
-            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
-
-     multi = '''If you end a line with two spaces,
-     a soft return is used for the next line.
-
-     Two (or more) newline characters in a row will result in a hard return.
-     '''
-     st.markdown(multi)
      
 st.divider()
 
