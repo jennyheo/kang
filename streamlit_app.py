@@ -377,7 +377,7 @@ with tab2:
 
 
      if st.session_state.kkk == False:
-          st.session_state.kkk=''
+          st.session_state.kkk='' 
 
 
 with tab3:
