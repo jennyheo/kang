@@ -7,7 +7,7 @@ import pyarrow as pa
 st.set_page_config(layout="wide")
 #.streamlit/config.toml 파일에서 maincolor 지정 : 파란색
 
-st.subheader('병역처분결과에 대해 알려드립니다')
+st.subheader('병역처분결과를 설명해드립니다')
 
 with st.expander('😄 알려드립니다'):
   st.write('병역판정검사(입영판정검사) 결과지 내용에 대해 궁금한 사항을 안내합니다.')
@@ -247,7 +247,7 @@ with tab2:
           st.rerun()
      if "안과"==st.session_state.kkk: 
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다.', divider=True)
-          st.write('맨눈(나안)시력 0.3이하인 사람은 정밀검사를 실시합니다. (정밀검사 결과는 결과지 하단에 기록됩니다.)')
+          st.write('맨눈(나안)시력 0.3이하인 사람은 정밀검사를 실시합니다.  \n (정밀검사 결과는 결과지 하단에 기록됩니다.)')
 
      if st.button('혈압', use_container_width=True):
           st.session_state['kkk'] = '혈압'
@@ -266,7 +266,7 @@ with tab2:
           st.rerun()
      if "AST"==st.session_state.kkk: 
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.markdown('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다.\n'
+          st.markdown('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다.  \n'
                       ' 정상범위는 0 ~ 40 IU/L 이하입니다')
           v = st.slider("❓ 검사결과지의 AST수치를 입력하세요", 0, 100, 40)
           if v <= 40:
@@ -280,7 +280,7 @@ with tab2:
           st.rerun()
      if "ALT"==st.session_state.kkk: 
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다. 주로 간에만 존재합니다. 간염을 발견하기에 가장 효과적인 검사 항목 중 하나입니다. 정상범위는 0 ~ 41 IU/L입니다.')
+          st.write('간세포 내에 존재하는 효소로 간 손상 시 혈중으로 유출되어 혈중 수치가 증가하게 됩니다. 주로 간에만 존재합니다. 간염을 발견하기에 가장 효과적인 검사 항목 중 하나입니다.  \n정상범위는 0 ~ 41 IU/L입니다.')
           v = st.slider("❓ 검사결과지의 ALT수치를 입력하세요", 0, 100, 41)
           if v <= 41:
                st.write(f"ALT수치 {v} : 🟢 정상입니다") 
@@ -293,29 +293,29 @@ with tab2:
           st.rerun()
      if "간염"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('B형간염과 C형간염으로 나눠집니다. 정상범위는 음성입니다')
+          st.write('B형간염과 C형간염으로 나눠집니다.  \n 정상범위는 음성입니다')
 
      if st.button('단백뇨', use_container_width=True):
           st.session_state['kkk'] = '단백뇨'
           st.rerun()
      if "단백뇨"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('소변 내에 과도한 단백질이 섞여 나오는 것을 말합니다. 신장기능이 저하되면 사구체에서 여과된 단백질을 재흡수해서 혈액으로 되돌려보내지 못하고 소변으로 단백질이 나옵니다. 정상범위는 1+ 이하입니다.')
+          st.write('소변 내에 과도한 단백질이 섞여 나오는 것을 말합니다. 신장기능이 저하되면 사구체에서 여과된 단백질을 재흡수해서 혈액으로 되돌려보내지 못하고 소변으로 단백질이 나옵니다.  \n정상범위는 1+ 이하입니다.')
      
      if st.button('혈뇨', use_container_width=True):
           st.session_state['kkk'] = '혈뇨'
           st.rerun()
      if "혈뇨"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('혈노란 소변에 비정상적인 양의 적혈구가 섞여 나오는 질환을 말합니다. 정상범위는 적혈구 0~4개입니다.')
+          st.write('혈노란 소변에 비정상적인 양의 적혈구가 섞여 나오는 질환을 말합니다.  \n정상범위는 적혈구 0~4개입니다.')
 
      if st.button('Glucose', use_container_width=True):
           st.session_state['kkk'] = 'Glucose'
           st.rerun()
      if "Glucose"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('공복 혈당은 8시간 이상의 공복상태에서 혈액, 즉 혈장 속의 포도당 농도입니다. 정상범위는 74~106 mg/dL입니다')
-          v = st.slider("❓ 검사결과지의 Glucoss수치를 입력하세요", 0, 200, 100)
+          st.write('공복 혈당은 8시간 이상의 공복상태에서 혈액, 즉 혈장 속의 포도당 농도입니다.  \n정상범위는 74~106 mg/dL입니다')
+          v = st.slider("❓ 검사결과지의 Glucoss수치를 입력하세요", 0, 200, 106)
           if v <= 106 and v >= 74:
                st.write(f"Glucose수치 {v} : 🟢 정상입니다") 
           else:
@@ -326,14 +326,14 @@ with tab2:
           st.rerun()
      if "HbA1c"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('지난 2~3개월 동안의 혈당의 평균치를 평가하는 것으로 혈중 포도당 수치가 높을수록 더 많은 당화혈색소가 생성됩니다. 정상범위는 4~6%입니다.(혈당 126이상시 검사)')
+          st.write('지난 2 ~ 3개월 동안의 혈당의 평균치를 평가하는 것으로 혈중 포도당 수치가 높을수록 더 많은 당화혈색소가 생성됩니다.  \n정상범위는 4 ~ 6%입니다.(혈당 126이상시 검사)')
 
      if st.button('WBC', use_container_width=True): #0~221.3
           st.session_state['kkk'] = 'WBC'
           st.rerun()
      if "WBC"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('백혈구수가 1,000mm³가 넘으면 백혈구증가증으로 판단합니다. 반대로 비정상적으로 백혈구가 감소한 상태는 백혈구감소증이라 부릅니다. 정상범위는 4.0~10.0 X 10³/μL입니다')
+          st.write('백혈구수가 1,000mm³가 넘으면 백혈구증가증으로 판단합니다. 반대로 비정상적으로 백혈구가 감소한 상태는 백혈구감소증이라 부릅니다.  \n정상범위는 4.0~10.0 X 10³/μL입니다')
           v = st.slider("❓ 검사결과지의 WBC수치를 입력하세요", 0, 20, 10)
           if v <= 10 and v >= 4:
                st.write(f"WBC수치 {v} : 🟢 정상입니다") 
@@ -345,7 +345,7 @@ with tab2:
           st.rerun()
      if "RBC"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('혈액 내 적혈구가 감소하거나 낮으면 혈액이 운반하는 능력이 저하되어 빈혈이 발생합니다. 정상범위는 4.2~6.3 X 10⁶/μL입니다')
+          st.write('혈액 내 적혈구가 감소하거나 낮으면 혈액이 운반하는 능력이 저하되어 빈혈이 발생합니다.  \n정상범위는 4.2~6.3 X 10⁶/μL입니다')
           v = st.slider("❓ 검사결과지의 RBC수치를 입력하세요", 0.0, 10.0, 6.3)
           if v <= 6.3 and v >= 4.2:
                st.write(f"RBC수치 {v} : 🟢 정상입니다") 
@@ -357,7 +357,7 @@ with tab2:
           st.rerun()
      if "Hb"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('Hb(Hemoglobin)은 혈액 속의 적혈구에 있는 단백질로, 혈색소라고도 합니다. 혈색소는 몸 전체에 산소를 운반하는 역할을 합니다. 정상범위는 13.7~17.5g/dL입니다')
+          st.write('Hb(Hemoglobin)은 혈액 속의 적혈구에 있는 단백질로, 혈색소라고도 합니다. 혈색소는 몸 전체에 산소를 운반하는 역할을 합니다.  \n정상범위는 13.7~17.5g/dL입니다')
           v = st.slider("❓ 검사결과지의 HB수치를 입력하세요", 0.0, 25.0, 17.5)
           if v <= 17.5 and v >= 13.7:
                st.write(f"HB수치 {v} : 🟢 정상입니다") 
@@ -369,7 +369,7 @@ with tab2:
           st.rerun()
      if "PLT"==st.session_state.kkk:
           st.subheader(f'👉 ' + st.session_state['kkk'] + ' 안내입니다', divider=True)
-          st.write('혈소판은 혈관이 손상되었을 때 혈장에서 일어나는 응고과정에 관여합니다. 정상범위는 130 ~ 400 X 10³/μL입니다')
+          st.write('혈소판은 혈관이 손상되었을 때 혈장에서 일어나는 응고과정에 관여합니다.  \n정상범위는 130 ~ 400 X 10³/μL입니다')
           v = st.slider("❓ 검사결과지의 PLT수치를 입력하세요", 0, 500, 130)
           if v <= 400 and v >= 130:
                st.write(f"PLT수치 {v} : 🟢 정상입니다") 
