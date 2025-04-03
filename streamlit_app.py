@@ -17,7 +17,7 @@ with st.expander('😄 알려드립니다'):
 css = ''' 
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:20px;
+    font-size:17px;
     }
 
 	.stTabs [data-baseweb="tab-list"] {
