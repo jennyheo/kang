@@ -13,17 +13,11 @@ with st.expander('😄 알려드립니다'):
   st.write('병역판정검사(입영판정검사) 결과지 내용에 대해 궁금한 사항을 안내합니다.')
   st.image('https://mma.go.kr/download/visual/CAIS_HPIS_202412020402149250.jpg', width=250)
 
-#사이드바 옵션
-#st.sidebar.header('입력')
-#user_name = st.sidebar.selectbox('병역처분 결과를 입력하세요', ['','현역입영대상','사회복무요원소집대상','전시근로역','병역면제','재검대상'])
-#user_emoji = st.sidebar.selectbox('검사결과 중 어떤 항목이 궁금하신가요?', ['', '체질량지수','혈압','색각','AST','ALT','간염','Gloucoss'])
-#user_food = st.sidebar.selectbox('가장 좋아하는 음식은?', ['', 'Tom Yum Kung', 'Burrito', 'Lasagna', 'Hamburger', 'Pizza'])
-
 #탭메뉴의 글자크기 지정
 css = ''' 
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
-    font-size:15px;
+    font-size:20px;
     }
 
 	.stTabs [data-baseweb="tab-list"] {
@@ -47,7 +41,7 @@ css = '''
 </style>
 '''
 
-tab1, tab2, tab3 = st.tabs(['병역처분','검사참고치','바로가기']) #탭메뉴 가로형
+tab1, tab2, tab3 = st.tabs(['병역이행안내','검사결과참고치','바로가기']) #탭메뉴 가로형
 
 st.markdown(css, unsafe_allow_html=True)
 
@@ -58,7 +52,7 @@ with tab1:
      user_name = st.selectbox('',['병역처분결과를 선택하세요','현역병입영대상','사회복무요원소집대상','전시근로역','병역면제','재신체검사대상'], label_visibility = 'hidden')
 
 
-     if user_name != '':
+     if user_name != '병역처분결과를 선택하세요':
           #st.subheader(', divider=True)
           st.markdown(f"#### 🎯 {user_name}")
      else:
